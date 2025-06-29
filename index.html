@@ -2,26 +2,25 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Health Estética Avançada</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f5f0f5;
-      color: #333;
+      background: #f5f0f8;
+      color: #4a004a;
     }
     header {
-      background: #cfa7d6;
+      background: #d6b8d6;
       padding: 20px;
       text-align: center;
     }
-    header img {
-      max-width: 200px;
-      margin-bottom: 10px;
+    header h1 {
+      margin: 0;
     }
     nav a {
-      margin: 0 10px;
+      margin: 0 15px;
       color: #4a004a;
       text-decoration: none;
       font-weight: bold;
@@ -30,50 +29,52 @@
       padding: 20px;
     }
     .servicos, .contato, .agenda {
-      background: #fef9fe;
+      background: #f9f5fb;
       border-radius: 8px;
       margin-bottom: 20px;
       padding: 20px;
+      box-shadow: 0 0 8px rgba(74,0,74,0.1);
     }
     h2 {
       color: #4a004a;
+      margin-bottom: 10px;
     }
-    .botao {
+    ul {
+      list-style: inside disc;
+      padding-left: 0;
+    }
+    a.botao {
       display: inline-block;
-      margin: 5px;
+      margin: 5px 10px 5px 0;
       padding: 10px 15px;
       border-radius: 5px;
       background: #4a004a;
       color: white;
       text-decoration: none;
-    }
-    .agenda form {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-      gap: 10px;
-    }
-    .agenda button {
-      padding: 10px;
-      background: #d6b8d6;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+      font-weight: bold;
     }
     footer {
       text-align: center;
       font-size: 0.9em;
-      padding: 10px;
+      padding: 15px;
       background: #e5d0e5;
+      color: #4a004a;
+    }
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(74,0,74,0.15);
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo_health_estetica.png" alt="Logo Health Estética Avançada"/>
     <h1>Health Estética Avançada</h1>
     <nav>
       <a href="#servicos">Serviços</a>
-      <a href="#agenda">Agende online</a>
+      <a href="#agenda">Agendamento</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -82,30 +83,16 @@
     <h2>🎯 Nossos Serviços</h2>
     <ul>
       <li>Estética Facial (limpeza, peeling, rejuvenescimento)</li>
-      <li>Estética Corporal (drenagem, massagem, tratamentos modeladores)</li>
-      <li>Estética Capilar (hidratação, cronograma capilar)</li>
+      <li>Estética Corporal (drenagem, massagem, modeladores)</li>
+      <li>Estética Capilar (hidratação, cauterização, cronograma capilar)</li>
       <li>Nutrição Estética</li>
       <li>Psicologia</li>
     </ul>
   </section>
 
-  <iframe src="https://calendly.com/app/scheduling/meeting_types/user/me" title="Agendamento"></iframe>
-    <h2>📅 Agendamento</h2>
-    <p>Escolha um horário (hora cheia):</p>
-    <form onsubmit="alert('Agendado com sucesso!'); return false;">
-      <button type="button">09h</button>
-      <button type="button">10h</button>
-      <button type="button">11h</button>
-      <button type="button">12h</button>
-      <button type="button">13h</button>
-      <button type="button">14h</button>
-      <button type="button">15h</button>
-      <button type="button">16h</button>
-      <button type="button">17h</button>
-      <button type="button">18h</button>
-      <button type="button">19h</button>
-      <button type="button">20h</button>
-    </form>
+  <section id="agenda" class="agenda">
+    <h2>📅 Agende seu horário</h2>
+    <iframe src="https://calendly.com/esteticahealth-rj" title="Agendamento Health Estética Avançada" loading="lazy"></iframe>
   </section>
 
   <section id="contato" class="contato">
@@ -116,13 +103,19 @@
     <p><strong>Instagram:</strong> <a href="https://instagram.com/health_estetica" target="_blank">@health_estetica</a></p>
 
     <div>
-      <a class="botao" href="https://wa.me/5521999999843">WhatsApp</a>
+      <a class="botao" href="https://wa.me/5521999999843?text=Olá%20quero%20saber%20mais%20sobre%20um%20tratamento" target="_blank">WhatsApp</a>
       <a class="botao" href="mailto:esteticahealth.rj@gmail.com">E‑mail</a>
       <a class="botao" href="https://instagram.com/health_estetica" target="_blank">Instagram</a>
     </div>
 
     <p><strong>Funcionamento:</strong> Segunda a Sábado, das 09h às 20h</p>
   </section>
+
+  <footer>
+    © 2025 Health Estética Avançada – Todos os direitos reservados.
+  </footer>
+</body>
+</html>
 
   <footer>
     © 2025 Health Estética Avançada – Todos os direitos reservados.
